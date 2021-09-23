@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+header{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin-top: 1rem;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff, 
+                 0 0 20px green, 
+                 0 0 30px green, 
+                 0 0 40px green, 
+                 0 0 55px green, 
+                 0 0 70px green;
+
+}
+header a{
+color: white;
+}
+/*---CARD TRANSFORM----*/
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+  
+  --clr: #b7c9e5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Oswald', sans-serif;
+  background:#2c2f33;
+}
+
+.card {
+  width: 400px;
+  margin-right: 50%;
+  margin-top: 3rem;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color:rgb(183, 201, 229 ,0.5);
+  background-image: url(../images/messi.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color:rgb(212, 198, 114);
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  opacity: .7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+
+.card__back {
+  transform: rotateY(.5turn);
+  color:rgb(183, 201, 229);
+  background: #333;
+}
+
+
+
+/*-----GRID LAYOUT---*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(12, );
+  grid-gap: 10px;
+ 
+}
+
+
+/*------CARD 2----*/
+
+.card2__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card2__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/gta-5.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card2__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+/*-----CARD 3----*/
+
+.card3__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card3__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/need-for-speed.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color:rgb(212, 198, 114);
+}
+.card3__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+/*-----CARD 4------*/
+.card4__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card4__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/cod.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card4__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+/*----CARD 5-----*/
+
+.card5__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card5__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/minecraft.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card5__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+/*------CARD 6------*/
+.card6__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card6__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/cyber-punk.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card6__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+/*--------CARD 7------*/
+
+.card7__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card7__front {
+  background-color:rgb(183, 201, 229 ,0);
+  background-image: url(../images/god-of-war.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card7__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+/*-------CARD 8------*/
+
+.card8__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card8__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/pubg.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card8__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+/*------CARD 9----------*/
+
+.card9__front{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+.card9__front {
+  background-color:rgb(183, 201, 229 ,0.3);
+  background-image: url(../images/watchdog.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(212, 198, 114);
+}
+.card9__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+.button{
+  padding: 10px;
+  width:30%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  background-color: cyan;
+  margin-left: 5px;
+}
