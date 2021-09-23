@@ -1,22 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-
-header{
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-    margin-top: 1rem;
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff, 
-                 0 0 20px green, 
-                 0 0 30px green, 
-                 0 0 40px green, 
-                 0 0 55px green, 
-                 0 0 70px green;
-
+header {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  margin-top: 1rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green,
+    0 0 40px green, 0 0 55px green, 0 0 70px green;
 }
-header a{
-color: white;
+header a {
+  color: white;
 }
 /*---CARD TRANSFORM----*/
 
@@ -24,14 +17,16 @@ color: white;
   --level-one: translateZ(3rem);
   --level-two: translateZ(6rem);
   --level-three: translateZ(9rem);
-  
+
   --fw-normal: 400;
   --fw-bold: 700;
-  
+
   --clr: #b7c9e5;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -40,8 +35,8 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: 'Oswald', sans-serif;
-  background:#2c2f33;
+  font-family: "Oswald", sans-serif;
+  background: #2c2f33;
 }
 
 .card {
@@ -59,7 +54,7 @@ body {
 }
 
 .card:hover .card__content {
-  transform: rotateY(.5turn);
+  transform: rotateY(0.5turn);
 }
 
 .card__front,
@@ -77,15 +72,15 @@ body {
 }
 
 .card__front {
-  background-color:rgb(183, 201, 229 ,0.5);
+  background-color: rgb(183, 201, 229, 0.5);
   background-image: url(../images/messi.jpg);
   background-size: cover;
   background-blend-mode: overlay;
-  color:rgb(212, 198, 114);
+  color: rgb(212, 198, 114);
 }
 
 .card__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -107,9 +102,9 @@ body {
   transform: var(--level-two);
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: var(--fw-bold);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .card__body {
@@ -119,28 +114,23 @@ body {
   line-height: 1.6;
 }
 
-
 .card__back {
-  transform: rotateY(.5turn);
-  color:rgb(183, 201, 229);
+  transform: rotateY(0.5turn);
+  color: rgb(183, 201, 229);
   background: #333;
 }
-
-
 
 /*-----GRID LAYOUT---*/
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, );
+  grid-template-rows: repeat(12);
   grid-gap: 10px;
- 
 }
-
 
 /*------CARD 2----*/
 
-.card2__front{
+.card2__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -153,14 +143,14 @@ body {
   align-content: center;
 }
 .card2__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/gta-5.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card2__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -172,7 +162,7 @@ body {
 }
 /*-----CARD 3----*/
 
-.card3__front{
+.card3__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -185,14 +175,14 @@ body {
   align-content: center;
 }
 .card3__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/need-for-speed.jpg);
   background-size: cover;
   background-blend-mode: overlay;
-  color:rgb(212, 198, 114);
+  color: rgb(212, 198, 114);
 }
 .card3__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -204,7 +194,7 @@ body {
 }
 
 /*-----CARD 4------*/
-.card4__front{
+.card4__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -217,14 +207,14 @@ body {
   align-content: center;
 }
 .card4__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/cod.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card4__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -237,7 +227,7 @@ body {
 
 /*----CARD 5-----*/
 
-.card5__front{
+.card5__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -250,14 +240,14 @@ body {
   align-content: center;
 }
 .card5__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/minecraft.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card5__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -269,7 +259,7 @@ body {
 }
 
 /*------CARD 6------*/
-.card6__front{
+.card6__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -282,14 +272,14 @@ body {
   align-content: center;
 }
 .card6__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/cyber-punk.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card6__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -302,7 +292,7 @@ body {
 
 /*--------CARD 7------*/
 
-.card7__front{
+.card7__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -315,14 +305,14 @@ body {
   align-content: center;
 }
 .card7__front {
-  background-color:rgb(183, 201, 229 ,0);
+  background-color: rgb(183, 201, 229, 0);
   background-image: url(../images/god-of-war.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card7__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -334,7 +324,7 @@ body {
 }
 /*-------CARD 8------*/
 
-.card8__front{
+.card8__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -347,14 +337,14 @@ body {
   align-content: center;
 }
 .card8__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/pubg.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card8__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -366,7 +356,7 @@ body {
 }
 /*------CARD 9----------*/
 
-.card9__front{
+.card9__front {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -379,14 +369,14 @@ body {
   align-content: center;
 }
 .card9__front {
-  background-color:rgb(183, 201, 229 ,0.3);
+  background-color: rgb(183, 201, 229, 0.3);
   background-image: url(../images/watchdog.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: rgb(212, 198, 114);
 }
 .card9__front::before {
-  content: '';
+  content: "";
   position: absolute;
   --spacer: 1em;
   top: var(--spacer);
@@ -396,11 +386,66 @@ body {
   border: 3px solid currentColor;
   transform: var(--level-one);
 }
-.button{
+.button {
   padding: 10px;
-  width:30%;
-  font-family: 'Oswald', sans-serif;
+  width: 30%;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   background-color: cyan;
   margin-left: 5px;
 }
+
+/*SIDEBAR NAV*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.bars {
+  margin-right: 95%;
+  color: white;
+  font-size: 30px;
+}
+/*SIDEBAR AREA ENDS*/
