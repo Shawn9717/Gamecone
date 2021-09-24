@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 body {
   text-align: center;
-  background-color: #222222;
+  background-color: #aca8a8;
   color: #f1f1ec;
 }
 
@@ -25,6 +25,10 @@ h2 {
     0 0 40px green, 0 0 55px green, 0 0 70px green;
 }
 
+img {
+  width:150px;
+  height:150px;
+  }
 #contact {
   text-align: center;
   margin-top: 100px;
