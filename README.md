@@ -2,7 +2,7 @@
 
 #### A website for gamers to interact and share about their interests, 2021
 
-#### By **Karl Mutunga, Abdirahman Mumin, Shannelle Mibei, Shawn Njonga, Luther King**
+#### By **Karl Mutunga, mccafee025, Shannelle Mibei, Shawn Njonga, Luther King**
 
 ## Description
 
